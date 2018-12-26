@@ -1,12 +1,12 @@
 package com.stylefeng.guns.core.aop;
 
-import com.stylefeng.guns.core.common.annotion.BussinessLog;
 import com.stylefeng.guns.core.common.constant.dictmap.base.AbstractDictMap;
+import com.stylefeng.guns.core.shiro.ShiroUser;
+import com.stylefeng.guns.core.common.annotion.BussinessLog;
 import com.stylefeng.guns.core.log.LogManager;
 import com.stylefeng.guns.core.log.LogObjectHolder;
 import com.stylefeng.guns.core.log.factory.LogTaskFactory;
 import com.stylefeng.guns.core.shiro.ShiroKit;
-import com.stylefeng.guns.core.shiro.ShiroUser;
 import com.stylefeng.guns.core.support.HttpKit;
 import com.stylefeng.guns.core.util.Contrast;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -34,7 +34,7 @@ public class LogAop {
 
     private Logger log = LoggerFactory.getLogger(this.getClass());
 
-    @Pointcut(value = "@annotation(com.stylefeng.guns.core.common.annotion.BussinessLog)")
+    @Pointcut(value = "@annotation(BussinessLog)")
     public void cutService() {
     }
 

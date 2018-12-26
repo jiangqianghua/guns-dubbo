@@ -15,8 +15,6 @@ import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 
-import static com.stylefeng.guns.core.common.constant.factory.MutiStrFactory.*;
-
 @Service
 @Transactional
 public class DictServiceImpl extends ServiceImpl<DictMapper, Dict> implements IDictService {

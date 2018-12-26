@@ -16,8 +16,8 @@
 package com.stylefeng.guns.core.shiro.check;
 
 import com.stylefeng.guns.core.listener.ConfigListener;
-import com.stylefeng.guns.core.shiro.ShiroKit;
 import com.stylefeng.guns.core.shiro.ShiroUser;
+import com.stylefeng.guns.core.shiro.ShiroKit;
 import com.stylefeng.guns.core.support.CollectionKit;
 import com.stylefeng.guns.core.support.HttpKit;
 import com.stylefeng.guns.core.util.SpringContextHolder;

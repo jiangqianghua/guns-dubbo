@@ -382,3 +382,14 @@ CREATE TABLE `test` (
 ) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 SET FOREIGN_KEY_CHECKS = 1;
+
+
+DROP TABLE IF EXISTS `tbl_house`;
+CREATE TABLE tbl_house(
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    house_user varchar(50),
+    house_address varchar(200),
+    house_data datetime,
+    house_desc varchar(500),
+      PRIMARY KEY (`id`)
+);

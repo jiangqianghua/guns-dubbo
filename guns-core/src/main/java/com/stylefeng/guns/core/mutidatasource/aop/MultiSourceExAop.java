@@ -30,7 +30,7 @@ public class MultiSourceExAop implements Ordered {
     @Autowired
     MutiDataSourceProperties mutiDataSourceProperties;
 
-    @Pointcut(value = "@annotation(com.stylefeng.guns.core.mutidatasource.annotion.DataSource)")
+    @Pointcut(value = "@annotation(DataSource)")
     private void cut() {
 
     }

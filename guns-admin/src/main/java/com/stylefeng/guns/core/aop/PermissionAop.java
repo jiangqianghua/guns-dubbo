@@ -36,7 +36,7 @@ import java.lang.reflect.Method;
 @Order(200)
 public class PermissionAop {
 
-    @Pointcut(value = "@annotation(com.stylefeng.guns.core.common.annotion.Permission)")
+    @Pointcut(value = "@annotation(Permission)")
     private void cutPermission() {
 
     }
